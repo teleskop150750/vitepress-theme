@@ -1,0 +1,66 @@
+.vt-menu {
+  min-width: 192px;
+  padding: 12px 0;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  background: var(--vt-c-bg);
+
+  box-shadow: var(--vt-shadow-3);
+
+  transition: background-color 0.5s;
+}
+
+.dark .vt-menu {
+  border: 1px solid var(--vt-c-divider-light);
+
+  background: var(--vt-c-bg);
+
+  box-shadow: var(--vt-shadow-1);
+}
+
+.vt-menu-items {
+  transition: border-color 0.5s;
+}
+
+.vt-menu .vt-menu-group {
+  padding: 0 0 12px;
+}
+
+.vt-menu .vt-menu-group + .vt-menu-group {
+  padding: 11px 0 12px;
+
+  border-top: 1px solid var(--vt-c-divider-light);
+}
+
+.vt-menu .vt-menu-group:last-child {
+  padding-bottom: 0;
+}
+
+.vt-menu .vt-menu-group + .vt-menu-item-item {
+  padding: 11px 16px 0;
+
+  border-top: 1px solid var(--vt-c-divider-light);
+}
+
+.vt-menu .vt-menu-item {
+  padding: 0 16px;
+
+  white-space: nowrap;
+}
+
+.vt-menu-label {
+  flex-grow: 1;
+
+  color: var(--vt-c-text-2);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+
+  transition: color 0.5s;
+}
+
+.vt-menu-action {
+  padding-left: 24px;
+}
